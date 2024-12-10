@@ -1,0 +1,1 @@
+{"_default": {"1": {"name": "LoginForm", "username": "text", "password": "text"}, "2": {"name": "RegistrationForm", "username": "text", "password": "text", "password_repeat": "text", "email": "email", "phone_number": "phone"}, "3": {"name": "OrderForm", "item": "text", "order_date": "date"}}}

@@ -1,0 +1,71 @@
+[
+    {
+        "data": {
+            "username": "test_username",
+            "password": "test_password"
+        },
+        "response": {
+            "status": 200,
+            "data": "LoginForm"
+        }
+    },
+    {
+        "data": {
+            "username": "+7 777 777 77 77",
+            "password": "test_password"
+        },
+        "response": {
+            "status": 404,
+            "data": {
+                "username": "phone",
+                "password": "text"
+            }
+        }
+    },
+    {
+        "data": {
+            "username": "test_username", 
+            "password": "test_password",
+            "password_repeat": "test_password", 
+            "phone_number": "+7 910 181 00 84", 
+            "email": "test@test.com"
+        },
+        "response": {
+            "status": 200,
+            "data": "RegistrationForm"
+        }
+    },
+    {
+        "data": {
+            "item": "some_item",
+            "order_date": "12.12.2012"
+        },
+        "response": {
+            "status": 200,
+            "data": "OrderForm"
+        }
+    },
+    {
+        "data": {
+            "item": "some_item",
+            "order_date": "2012-12-12"
+        },
+        "response": {
+            "status": 200,
+            "data": "OrderForm"
+        }
+    },
+    {
+        "data": {
+            "item": "some_item",
+            "order_date": "32.12.2012"
+        },
+        "response": {
+            "status": 404,
+            "data": {
+                "item": "text",
+                "order_date": "text"
+            }
+        }
+    }
+]
